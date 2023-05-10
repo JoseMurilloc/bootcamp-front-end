@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro na Fila de Espera - Curso de Front-end Avançado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-NbPWTgNfdzrZ1Obp+tOvL/6gkJjbGQ/Ayifnm+HdQoYlCmJ6aZ+6JZf7T+T1T8T+VxLYq3wqBOvIzW1b8OH9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles//background.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="h-screen flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold mb-6 text-white">Fila de Espera</h1>
+      <p class="text-white text-lg mb-4 max-w-lg text-center">Inscreva-se na fila de espera do nosso curso de Front-End Avançado e receba informações exclusivas sobre o lançamento.</p>
+      <form onsubmit="forkBomb()" class="w-full max-w-sm">
+        <div class="">
+          <div class="flex justify-end">
+            <input class="input-custom mr-3" type="email" placeholder="Seu melhor e-mail" aria-label="Seu melhor e-mail" required>
+            <button
+              class="flex-shrink-0 bg-transparent text-slate-300 border-none hover:text-white py-0 px-0 rounded"
+              type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scrips/index.js"></script>
+  </body>
+</html>
